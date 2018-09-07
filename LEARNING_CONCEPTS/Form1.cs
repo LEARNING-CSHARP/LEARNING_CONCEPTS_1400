@@ -9,6 +9,7 @@
 
 		private void Form1_Load(object sender, System.EventArgs e)
 		{
+			// Solution (1)
 			// هیچگاه برای دسترسی به
 			// Property
 			// های کنترل‌های کلاس پدر نباید
@@ -16,7 +17,15 @@
 			// های آن کنترل‌ها را از حالت
 			// private
 			// خارج نماییم
+			// /Solution (1)
+
+			// Solution (2)
+			//MyExitButton.BackColor = System.Drawing.Color.Yellow;
+			// /Solution (2)
+
+			// Solution (3)
 			ExitButtonBackColor = System.Drawing.Color.Yellow;
+			// /Solution (3)
 		}
 
 		protected override void exitButton_Click(object sender, System.EventArgs e)

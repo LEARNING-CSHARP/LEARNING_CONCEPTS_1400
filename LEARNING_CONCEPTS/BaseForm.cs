@@ -7,11 +7,19 @@
 			InitializeComponent();
 		}
 
+		//protected System.Windows.Forms.Button MyExitButton
+		//{
+		//	get
+		//	{
+		//		return exitButton;
+		//	}
+		//}
+
 		protected System.Drawing.Color ExitButtonBackColor
 		{
 			get
 			{
-				return (exitButton.BackColor);
+				return exitButton.BackColor;
 			}
 			set
 			{
@@ -23,6 +31,11 @@
 		{
 			exitButton.BackColor = System.Drawing.Color.Khaki;
 		}
+
+		//private void exitButton_Click(object sender, System.EventArgs e)
+		//{
+		//	System.Windows.Forms.Application.Exit();
+		//}
 
 		protected virtual void exitButton_Click(object sender, System.EventArgs e)
 		{
