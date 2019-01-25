@@ -7,6 +7,13 @@
 			InitializeComponent();
 		}
 
+		// Solution (1)
+		//protected System.Windows.Forms.Button exitButton; // In Designer File
+		// /Solution (1)
+
+		// Solution (2)
+		//private System.Windows.Forms.Button exitButton; // In Designer File
+
 		//protected System.Windows.Forms.Button MyExitButton
 		//{
 		//	get
@@ -14,7 +21,14 @@
 		//		return exitButton;
 		//	}
 		//}
+		// /Solution (2)
 
+		// Solution (3)
+		//private System.Windows.Forms.Button exitButton; // In Designer File
+
+		/// <summary>
+		/// Property Bubbling
+		/// </summary>
 		protected System.Drawing.Color ExitButtonBackColor
 		{
 			get
@@ -26,18 +40,19 @@
 				exitButton.BackColor = value;
 			}
 		}
+		// /Solution (3)
 
 		private void BaseForm_Load(object sender, System.EventArgs e)
 		{
 			exitButton.BackColor = System.Drawing.Color.Khaki;
 		}
 
-		//private void exitButton_Click(object sender, System.EventArgs e)
+		//private void ExitButton_Click(object sender, System.EventArgs e)
 		//{
 		//	System.Windows.Forms.Application.Exit();
 		//}
 
-		protected virtual void exitButton_Click(object sender, System.EventArgs e)
+		protected virtual void ExitButton_Click(object sender, System.EventArgs e)
 		{
 			System.Windows.Forms.Application.Exit();
 		}

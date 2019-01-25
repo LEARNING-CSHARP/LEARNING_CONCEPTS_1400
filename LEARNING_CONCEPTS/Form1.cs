@@ -28,7 +28,7 @@
 			// /Solution (3)
 		}
 
-		protected override void exitButton_Click(object sender, System.EventArgs e)
+		protected override void ExitButton_Click(object sender, System.EventArgs e)
 		{
 			System.Windows.Forms.DialogResult result =
 				System.Windows.Forms.MessageBox.Show
@@ -42,7 +42,7 @@
 
 			if (result == System.Windows.Forms.DialogResult.Yes)
 			{
-				base.exitButton_Click(sender, e);
+				base.ExitButton_Click(sender, e);
 			}
 		}
 	}
